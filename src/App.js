@@ -13,6 +13,7 @@ import MissionLocationsScreen from './screens/MissionLocationsScreen';
 import QuestionnaireRecsScreen from './screens/QuestionnaireRecsScreen';
 import SearchIcon from '@material-ui/icons/Search';
 import QuestionsScreen from './screens/QuiestionsScreen';
+import LocationExecutiveSummaryScreen from './screens/LocationExecutiveSummaryScreen';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -44,7 +45,7 @@ function App() {
               edge='start'
               onClick={() => history.goBack()}
               color='inherit'>
-              {location.pathname.split("/").length < 3 ? <MenuIcon /> : <ArrowBackIcon />}
+                <MenuIcon />}
             </IconButton>}
             <Typography variant='h6' color='inherit' style={{ flexGrow: 1}}>
               {title}
@@ -61,6 +62,9 @@ function App() {
             </Route>
             <Route path='/missions/:missionId/:locationId/qa'>
               <QuestionnaireRecsScreen />
+            </Route>
+            <Route path='/missions/:missionId/:locationId/es'>
+              <LocationExecutiveSummaryScreen />
             </Route>
             <Route path='/missions/:missionId/:locationId'>
               <LocationScreen />

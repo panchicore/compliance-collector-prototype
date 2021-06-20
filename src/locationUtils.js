@@ -3,4 +3,13 @@ function percentageOfCompletion(location){
   return Math.floor(percent);
 }
 
-export {percentageOfCompletion}
+function percentageOfCompletionES(executive_summaries){
+  let total = 0;
+  if (executive_summaries.es1.length > 160) total+=25
+  if (executive_summaries.es2.length > 160) total+=25
+  if (executive_summaries.es3.length > 160) total+=25
+  if (executive_summaries.es4.length > 160) total+=25
+  return Math.floor(total);
+}
+
+export {percentageOfCompletion, percentageOfCompletionES}

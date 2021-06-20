@@ -2453,7 +2453,13 @@
               "hidden": false,
               "answer_value": "yes"
             }
-          ]
+          ],
+          "executive_summaries": {
+            "es1": "Dori is located in the Northern part of the country in the Sahel region. The Sahel is a specific UN security region with an ad hoc SRM and a Area Security Coordinator. WFP office is composed of 20 staffs included one International on TDY and 3 female staffs. Dori and the region are in SL4. If the city is relatively calm with a low rate of criminality , terrorist armed groups operate at only 40 kilometers. Access for humanitarian activities was progressively very significantly reduced in the region and at this stage only a limited part of the region remain accessible. Incidents are progressively approaching the city. A ASMT should soon be organized for a UN clarification of the still accessible areas and the necessary mitigation measures for reducing the risks during the authorized field missions ( communication, number of UN vehicles, Protection equipments, mission tracking, reaction to incidents, medical support) The WFP office is in a new building ( since last SAM in 2016) with better physical security.",
+            "es2": "The UNDSS SRM for Sahel is under review but the current one for the year xxxx to yyyy reflects the security situation. Measures are easy to follow. More Risk Events will come as result of many adhoc SRMs in the zone",
+            "es3": "If the physical security of the building is improved with the new building, most of previous recommendations concerning plan and procedures are still pending. Emergency stocks are also still missing and the office is thus still unprepared for facing a possible crisis in the city.",
+            "es4": "Only vehicles equipped with radio should be send to Dori. At least 2 operational satphones are urgently needed. There is at this stage no DSS presence in Dori and the TOR of the UNHCR LSA should be clarified."
+          }
         },
         {
           "id": 2272,
@@ -4355,7 +4361,13 @@
               "hidden": false,
               "answer_value": ""
             }
-          ]
+          ],
+          "executive_summaries": {
+            "es1": "Dori is located in the Northern part of the country in the Sahel region. The Sahel is a specific UN security region with an ad hoc SRM and a Area Security Coordinator. WFP office is composed of 20 staffs included one International on TDY and 3 female staffs. Dori and the region are in SL4. If the city is relatively calm with a low rate of criminality , terrorist armed groups operate at only 40 kilometers. Access for humanitarian activities was progressively very significantly reduced in the region and at this stage only a limited part of the region remain accessible. Incidents are progressively approaching the city. A ASMT should soon be organized for a UN clarification of the still accessible areas and the necessary mitigation measures for reducing the risks during the authorized field missions ( communication, number of UN vehicles, Protection equipments, mission tracking, reaction to incidents, medical support) The WFP office is in a new building ( since last SAM in 2016) with better physical security.",
+            "es2": "The UNDSS SRM for Sahel is under review but the current one for the year xxxx to yyyy reflects the security situation. Measures are easy to follow. More Risk Events will come as result of many adhoc SRMs in the zone",
+            "es3": "",
+            "es4": ""
+          }
         },
         {
           "id": 2273,
@@ -6257,7 +6269,13 @@
               "hidden": false,
               "answer_value": ""
             }
-          ]
+          ],
+          "executive_summaries": {
+            "es1": "",
+            "es2": "",
+            "es3": "",
+            "es4": ""
+          }
         },
         {
           "id": 2274,
@@ -8159,7 +8177,13 @@
               "hidden": false,
               "answer_value": ""
             }
-          ]
+          ],
+          "executive_summaries": {
+            "es1": "",
+            "es2": "",
+            "es3": "",
+            "es4": ""
+          }
         },
         {
           "id": 2266,
@@ -10061,7 +10085,13 @@
               "hidden": false,
               "answer_value": ""
             }
-          ]
+          ],
+          "executive_summaries": {
+            "es1": "",
+            "es2": "",
+            "es3": "",
+            "es4": ""
+          }
         },
         {
           "id": 2267,
@@ -11963,7 +11993,13 @@
               "hidden": false,
               "answer_value": ""
             }
-          ]
+          ],
+          "executive_summaries": {
+            "es1": "",
+            "es2": "",
+            "es3": "",
+            "es4": ""
+          }
         },
         {
           "id": 2265,
@@ -13865,7 +13901,13 @@
               "hidden": false,
               "answer_value": ""
             }
-          ]
+          ],
+          "executive_summaries": {
+            "es1": "",
+            "es2": "",
+            "es3": "",
+            "es4": ""
+          }
         },
         {
           "id": 2270,
@@ -15767,7 +15809,13 @@
               "hidden": false,
               "answer_value": ""
             }
-          ]
+          ],
+          "executive_summaries": {
+            "es1": "",
+            "es2": "",
+            "es3": "",
+            "es4": ""
+          }
         },
         {
           "id": 2271,
@@ -17669,7 +17717,13 @@
               "hidden": false,
               "answer_value": ""
             }
-          ]
+          ],
+          "executive_summaries": {
+            "es1": "",
+            "es2": "",
+            "es3": "",
+            "es4": ""
+          }
         },
         {
           "id": 2269,
@@ -19571,7 +19625,13 @@
               "hidden": false,
               "answer_value": ""
             }
-          ]
+          ],
+          "executive_summaries": {
+            "es1": "",
+            "es2": "",
+            "es3": "",
+            "es4": ""
+          }
         }
       ]
     },
@@ -21601,7 +21661,13 @@
             "hidden": false,
             "answer_value": "yes"
           }
-        ]
+        ],
+        "executive_summaries": {
+          "es1": "Dori is located in the Northern part of the country in the Sahel region. The Sahel is a specific UN security region with an ad hoc SRM and a Area Security Coordinator. WFP office is composed of 20 staffs included one International on TDY and 3 female staffs. Dori and the region are in SL4. If the city is relatively calm with a low rate of criminality , terrorist armed groups operate at only 40 kilometers. Access for humanitarian activities was progressively very significantly reduced in the region and at this stage only a limited part of the region remain accessible. Incidents are progressively approaching the city. A ASMT should soon be organized for a UN clarification of the still accessible areas and the necessary mitigation measures for reducing the risks during the authorized field missions ( communication, number of UN vehicles, Protection equipments, mission tracking, reaction to incidents, medical support) The WFP office is in a new building ( since last SAM in 2016) with better physical security.",
+          "es2": "The UNDSS SRM for Sahel is under review but the current one for the year xxxx to yyyy reflects the security situation. Measures are easy to follow. More Risk Events will come as result of many adhoc SRMs in the zone",
+          "es3": "If the physical security of the building is improved with the new building, most of previous recommendations concerning plan and procedures are still pending. Emergency stocks are also still missing and the office is thus still unprepared for facing a possible crisis in the city.",
+          "es4": "Only vehicles equipped with radio should be send to Dori. At least 2 operational satphones are urgently needed. There is at this stage no DSS presence in Dori and the TOR of the UNHCR LSA should be clarified."
+        }
       },
       {
         "id": 2272,
@@ -23503,7 +23569,13 @@
             "hidden": false,
             "answer_value": ""
           }
-        ]
+        ],
+        "executive_summaries": {
+          "es1": "Dori is located in the Northern part of the country in the Sahel region. The Sahel is a specific UN security region with an ad hoc SRM and a Area Security Coordinator. WFP office is composed of 20 staffs included one International on TDY and 3 female staffs. Dori and the region are in SL4. If the city is relatively calm with a low rate of criminality , terrorist armed groups operate at only 40 kilometers. Access for humanitarian activities was progressively very significantly reduced in the region and at this stage only a limited part of the region remain accessible. Incidents are progressively approaching the city. A ASMT should soon be organized for a UN clarification of the still accessible areas and the necessary mitigation measures for reducing the risks during the authorized field missions ( communication, number of UN vehicles, Protection equipments, mission tracking, reaction to incidents, medical support) The WFP office is in a new building ( since last SAM in 2016) with better physical security.",
+          "es2": "The UNDSS SRM for Sahel is under review but the current one for the year xxxx to yyyy reflects the security situation. Measures are easy to follow. More Risk Events will come as result of many adhoc SRMs in the zone",
+          "es3": "",
+          "es4": ""
+        }
       },
       {
         "id": 2273,
@@ -25405,7 +25477,13 @@
             "hidden": false,
             "answer_value": ""
           }
-        ]
+        ],
+        "executive_summaries": {
+          "es1": "",
+          "es2": "",
+          "es3": "",
+          "es4": ""
+        }
       },
       {
         "id": 2274,
@@ -27307,7 +27385,13 @@
             "hidden": false,
             "answer_value": ""
           }
-        ]
+        ],
+        "executive_summaries": {
+          "es1": "",
+          "es2": "",
+          "es3": "",
+          "es4": ""
+        }
       },
       {
         "id": 2266,
@@ -29209,7 +29293,13 @@
             "hidden": false,
             "answer_value": ""
           }
-        ]
+        ],
+        "executive_summaries": {
+          "es1": "",
+          "es2": "",
+          "es3": "",
+          "es4": ""
+        }
       },
       {
         "id": 2267,
@@ -31111,7 +31201,13 @@
             "hidden": false,
             "answer_value": ""
           }
-        ]
+        ],
+        "executive_summaries": {
+          "es1": "",
+          "es2": "",
+          "es3": "",
+          "es4": ""
+        }
       },
       {
         "id": 2265,
@@ -33013,7 +33109,13 @@
             "hidden": false,
             "answer_value": ""
           }
-        ]
+        ],
+        "executive_summaries": {
+          "es1": "",
+          "es2": "",
+          "es3": "",
+          "es4": ""
+        }
       },
       {
         "id": 2270,
@@ -34915,7 +35017,13 @@
             "hidden": false,
             "answer_value": ""
           }
-        ]
+        ],
+        "executive_summaries": {
+          "es1": "",
+          "es2": "",
+          "es3": "",
+          "es4": ""
+        }
       },
       {
         "id": 2271,
@@ -36817,7 +36925,13 @@
             "hidden": false,
             "answer_value": ""
           }
-        ]
+        ],
+        "executive_summaries": {
+          "es1": "",
+          "es2": "",
+          "es3": "",
+          "es4": ""
+        }
       },
       {
         "id": 2269,
@@ -38719,7 +38833,13 @@
             "hidden": false,
             "answer_value": ""
           }
-        ]
+        ],
+        "executive_summaries": {
+          "es1": "",
+          "es2": "",
+          "es3": "",
+          "es4": ""
+        }
       }
     ]
   }

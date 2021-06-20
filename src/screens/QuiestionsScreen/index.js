@@ -1,10 +1,26 @@
 import React from 'react';
-import { Button, Container, Grid, IconButton, Paper, TextField, Typography } from '@material-ui/core';
+import {
+  AppBar,
+  BottomNavigation,
+  BottomNavigationAction,
+  Button,
+  Container,
+  Grid,
+  IconButton,
+  Paper,
+  TextField,
+  Typography,
+} from '@material-ui/core';
 import { useHistory, useParams } from 'react-router-dom';
 import { AppContext } from '../../context';
 import { AreaOfFocusHeader } from '../QuestionnaireRecsScreen/AreasOfFocus';
 import MenuIcon from '@material-ui/icons/Menu';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+import SubjectIcon from '@material-ui/icons/Subject';
+import ExploreIcon from '@material-ui/icons/Explore';
+import BackupIcon from '@material-ui/icons/Backup';
+import SendIcon from '@material-ui/icons/Send';
 
 const ANSWER_TYPE_YES_NO = "Yes / No"
 const ANSWER_TYPE_YES_NO_NA = "Yes / No / NA"
@@ -145,30 +161,31 @@ export default function QuestionsScreen(){
         </Paper>
       </Container>
 
+      <AppBar position='fixed' color='default' style={{ top: 'auto', bottom: 0, padding: 20 }}>
+        <Grid container spacing={3}>
+          <Grid item xs={4}>
+            <Button
+              variant={'outlined'}
+              fullWidth
+              disabled={getPrevId() === undefined}
+              onClick={goToPrev}>Previous</Button>
+          </Grid>
 
-      <Grid container spacing={3}>
-        <Grid item xs={4}>
-          <Button
-            variant={'outlined'}
-            fullWidth
-            disabled={getPrevId() === undefined}
-            onClick={goToPrev}>Previous</Button>
-        </Grid>
+          <Grid item xs={4}>
+            <Button
+              variant={'outlined'}
+              fullWidth>Save and Next</Button>
+          </Grid>
 
-        <Grid item xs={4}>
-          <Button
-            variant={'outlined'}
-            fullWidth>Save and Next</Button>
+          <Grid item xs={4}>
+            <Button
+              variant={'outlined'}
+              fullWidth
+              disabled={getNextId() === undefined}
+              onClick={goToNext}>Next</Button>
+          </Grid>
         </Grid>
-
-        <Grid item xs={4}>
-          <Button
-            variant={'outlined'}
-            fullWidth
-            disabled={getNextId() === undefined}
-            onClick={goToNext}>Next</Button>
-        </Grid>
-      </Grid>
+      </AppBar>
 
     </React.Fragment>
   )

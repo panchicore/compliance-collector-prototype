@@ -24,7 +24,7 @@ import RestoreIcon from '@material-ui/icons/Restore';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 import GpsFixedIcon from '@material-ui/icons/GpsFixed';
 import FeedbackIcon from '@material-ui/icons/Feedback';
-import { percentageOfCompletion } from '../../locationUtils';
+import { percentageOfCompletion, percentageOfCompletionES } from '../../locationUtils';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 const useStyles = makeStyles((theme) => ({
@@ -51,8 +51,9 @@ export default function LocationScreen(){
   const location = mission.locations.find(loc => loc.id === parseInt(locationId));
 
   let percentOfCompletion = percentageOfCompletion(location);
+  let percentOfCompletionExecutiveSummary = percentageOfCompletionES(location.executive_summaries);
 
-  React.useState(() => {
+  React.useEffect(() => {
     setTitle(`${mission.name} · ${location.name}`);
 
     setMenuIcon(
@@ -68,6 +69,10 @@ export default function LocationScreen(){
 
   const goToQuestionnaireForRecommendations = () => {
     history.push(`/missions/${missionId}/${locationId}/qa`)
+  }
+
+  const goToExecutiveSummary = () => {
+    history.push(`/missions/${missionId}/${locationId}/es`)
   }
 
   return (
@@ -88,10 +93,10 @@ export default function LocationScreen(){
 
         <Grid item xs={6}>
           <Card>
-            <CardActionArea onClick={()=>{}}>
+            <CardActionArea onClick={()=>{goToExecutiveSummary()}}>
               <CardContent className={classes.paper}>
                 <SubjectIcon fontSize={'large'} />
-                <Typography variant={'body1'}>Executive Summary (100%)</Typography>
+                <Typography variant={'body1'}>Executive Summary ({percentOfCompletionExecutiveSummary}%)</Typography>
               </CardContent>
             </CardActionArea>
           </Card>
