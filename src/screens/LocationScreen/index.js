@@ -75,6 +75,12 @@ export default function LocationScreen(){
     history.push(`/missions/${missionId}/${locationId}/es`)
   }
 
+  const goToPastRecommendationReviewer = () => {
+    history.push(`/missions/${missionId}/${locationId}/rw`)
+  }
+
+
+
   return (
     <Container>
       <Toolbar variant={'dense'} />
@@ -104,7 +110,10 @@ export default function LocationScreen(){
 
         <Grid item xs={6}>
           <Card>
-            <CardActionArea onClick={()=>{alert("https://codesandbox.io/s/reviewapp-v1-3chpv")}}>
+            <CardActionArea onClick={()=>{
+              console.log("https://codesandbox.io/s/reviewapp-v1-3chpv")
+              goToPastRecommendationReviewer()
+            }}>
               <CardContent className={classes.paper}>
                 <RestoreIcon fontSize={'large'} />
                 <Typography variant={'body1'}>Past Recommendations Reviewer (100%)</Typography>
