@@ -79,7 +79,9 @@ export default function LocationScreen(){
     history.push(`/missions/${missionId}/${locationId}/rw`)
   }
 
-
+  const goToSRMReviewer = () => {
+    history.push(`/missions/${missionId}/${locationId}/srm`)
+  }
 
   return (
     <Container>
@@ -124,7 +126,10 @@ export default function LocationScreen(){
 
         <Grid item xs={6}>
           <Card>
-            <CardActionArea onClick={()=>{alert("https://codesandbox.io/s/srm-measures-app-v1-qlfl6?file=/src/Measures.js")}}>
+            <CardActionArea onClick={()=>{
+              console.log("https://codesandbox.io/s/srm-measures-app-v1-qlfl6?file=/src/Measures.js");
+              goToSRMReviewer()
+            }}>
               <CardContent className={classes.paper}>
                 <VerifiedUserIcon fontSize={'large'} />
                 <Typography variant={'body1'}>SRM Measures Reviewer (100%)</Typography>

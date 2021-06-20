@@ -15,6 +15,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import QuestionsScreen from './screens/QuiestionsScreen';
 import LocationExecutiveSummaryScreen from './screens/LocationExecutiveSummaryScreen';
 import LocationPastRecommendationsReviewerScreen from './screens/LocationPastRecommendationsReviewerScreen';
+import LocationSRMReviewerScreen from './screens/LocationSRMReviewerScreen';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -69,6 +70,9 @@ function App() {
             </Route>
             <Route path='/missions/:missionId/:locationId/rw'>
               <LocationPastRecommendationsReviewerScreen />
+            </Route>
+            <Route path='/missions/:missionId/:locationId/srm'>
+              <LocationSRMReviewerScreen />
             </Route>
             <Route path='/missions/:missionId/:locationId'>
               <LocationScreen />

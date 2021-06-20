@@ -8,7 +8,7 @@ import {
   IconButton,
   makeStyles,
   Paper,
-  TextField,
+  TextField, Toolbar,
   Typography,
 } from '@material-ui/core';
 import { useHistory, useParams } from 'react-router-dom';
@@ -228,14 +228,12 @@ export default function LocationPastRecommendationsReviewerScreen(){
   return (
 
     <Container>
-
-      <Grid container justify={'center'} alignItems={'center'}>
+      <Toolbar variant={'dense'} />
+      <Grid container justify={'center'} alignItems={'center'} spacing={1}>
         <Grid item xs={6}>
           <Typography
-            component="h2"
-            variant="h4"
+            variant="h5"
             align="left"
-            style={{ marginTop: 10 }}
           >
             Review one by one
           </Typography>

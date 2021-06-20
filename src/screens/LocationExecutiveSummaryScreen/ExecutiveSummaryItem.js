@@ -23,11 +23,11 @@ export default function ExecutiveSummaryItem({summary_type, label, helper, summa
   const done = summary.length > 160
 
   return (
-      <Grid container alignItems={'center'} spacing={3}>
-        <Grid item xs={7}>
-          <Typography variant={'h5'}>{label}</Typography>
+      <Grid container alignItems={'center'} spacing={2} style={{marginBottom: 10}}>
+        <Grid item xs={6}>
+          <Typography variant={'h6'}>{label}</Typography>
         </Grid>
-        <Grid item xs={5} style={{textAlign: 'right'}}>
+        <Grid item xs={6} style={{textAlign: 'right'}}>
           <Chip label={helper}
                 classes={done ? classes.green : classes.pink}
                 color={done ? 'primary': 'secondary'}
@@ -36,7 +36,7 @@ export default function ExecutiveSummaryItem({summary_type, label, helper, summa
           />
         </Grid>
         <Grid item xs={12}>
-          <TextField variant={'outlined'} multiline fullWidth rows={3} defaultValue={summary}
+          <TextField variant={'outlined'} multiline fullWidth rows={4} defaultValue={summary}
                      onChange={(e) => setSummary(e.target.value)}
           placeholder={helper}/>
         </Grid>
