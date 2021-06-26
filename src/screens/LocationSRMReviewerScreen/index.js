@@ -6,7 +6,7 @@ import {
   Chip,
   Container, Divider, FormControlLabel,
   Grid,
-  IconButton, makeStyles, Paper, Radio,
+  IconButton, makeStyles, MenuItem, Paper, Radio, Select, TextField,
   Toolbar,
   Typography,
 } from '@material-ui/core';
@@ -51,9 +51,23 @@ function MeasureItem({ m, i, applies }) {
     return <p key={i}>{item}</p>;
   });
   const n = i + 1;
+  const [selectedVulnerability, setSelectedVulnerability] = React.useState(0);
+  const [comment, setComment] = React.useState('');
+  const showCommentBox = selectedVulnerability > 1;
+
+  let isDone = false;
+  if (selectedVulnerability > 0){
+    if (selectedVulnerability === 1){
+      isDone = true
+    }else{
+      if(comment.length > 10){
+        isDone = true;
+      }
+    }
+  }
 
   return (
-    <Paper className={classes.recommendationPaper}>
+    <Paper className={classes.recommendationPaper} style={{ background: isDone ? "#d4ffd0" : "#fff" }}>
       <Grid container justify="space-between" alignItems="center">
         <Grid item>
           <Typography variant="overline">{m.category_name}</Typography>
@@ -106,36 +120,41 @@ function MeasureItem({ m, i, applies }) {
           direction="row"
           justify="space-between"
           alignItems="center"
+          spacing={1}
         >
-          <Grid item xs={6}>
-            <Typography>Is this SRM measure implemented?</Typography>
-          </Grid>
-          <Grid item xs={2}>
-            <FormControlLabel
-              value="end"
-              control={<Radio color="primary" />}
-              label="Yes"
-            />
-          </Grid>
-          <Grid item xs={2}>
-            <FormControlLabel
-              value="end"
-              control={<Radio color="primary" />}
-              label="No"
-            />
-          </Grid>
-          <Grid item xs={2}>
-            <FormControlLabel
-              value="end"
-              control={<Radio color="primary" />}
-              label="No Applicable"
-            />
+          <Grid item xs={12}>
+            <Typography>Mitigation risk management countermeasures and procedures has been</Typography>
           </Grid>
           <Grid item xs={12}>
-            <Typography>
-              When user selects NO: ask input. Create recommendation from here.
-            </Typography>
+
+            <Select
+              label={'Select one'}
+              fullWidth
+              value={selectedVulnerability}
+              onChange={(e) => setSelectedVulnerability(e.target.value)}>
+              <MenuItem value={1}>completely in place and consistently effective</MenuItem>
+              <MenuItem value={2}>in place (but may not be consistently effective or may have limitations)</MenuItem>
+              <MenuItem value={3}>not completely in place OR not consistently effective</MenuItem>
+              <MenuItem value={4}>not completely in place AND not consistently effective</MenuItem>
+              <MenuItem value={5}>disregarded</MenuItem>
+            </Select>
+
           </Grid>
+          {showCommentBox &&
+          <Grid item xs={12}>
+            <TextField
+              fullWidth
+              multiline
+
+              variant="standard"
+              rows={3}
+              label="A brief description on why the countermeasures and procedures are in this state"
+              defaultValue={comment}
+              onChange={(e) => setComment(e.target.value)}
+            />
+          </Grid>
+          }
+
         </Grid>
       </Paper>
     </Paper>
